@@ -17,7 +17,7 @@ function initPage() {
       localStorage.getItem('LOCALSTORAGE_KEY')
     );
   } catch {
-    currentTime = 0;
+    currentTime = null;
   }
 }
 initPage();
