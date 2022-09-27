@@ -16,8 +16,7 @@ function initPage() {
     let currentTime = player.setCurrentTime(
       localStorage.getItem('LOCALSTORAGE_KEY')
     );
-  } catch {
-    currentTime = null;
-  }
+  } catch (error) {}
 }
+
 initPage();
