@@ -23,3 +23,9 @@ const remove = key => {
     console.error('Get state error: ', error.message);
   }
 };
+
+export default {
+  save,
+  load,
+  remove,
+};
