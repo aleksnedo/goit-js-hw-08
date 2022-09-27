@@ -1,9 +1,9 @@
-import Player from '@vimeo/player';
+import VimeoPlayer from '@vimeo/player';
 import throttle from 'lodash.throttle';
 import localStorage from './storage';
 
 const iframeRef = document.querySelector('#vimeo-player');
-const player = new Player(iframeRef);
+const player = new VimeoPlayer(iframeRef);
 const LOCALSTORAGE_KEY = 'videoplayer-current-time';
 
 function onPlay(data) {
